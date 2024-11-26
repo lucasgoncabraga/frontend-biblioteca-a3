@@ -1,0 +1,11 @@
+<h2>Fila de Reservas</h2>
+<ul>
+  <li *ngFor="let reservation of reservations">
+    {{ reservation.book.title }} reservado por {{ reservation.user.nome }} até {{ reservation.dataDevolucao }}
+  </li>
+</ul>
+<button (click)="handleNextReservation()">Próxima Reserva</button>
+<div *ngIf="nextReservation">
+  <h3>Próxima Reserva:</h3>
+  <p>{{ nextReservation.book.title }} reservado por {{ nextReservation.user.nome }} até {{ nextReservation.dataDevolucao }}</p>
+</div>

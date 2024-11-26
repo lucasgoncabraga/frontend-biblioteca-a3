@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { BookService } from '../book.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-book-form',
   templateUrl: './book-form.component.html',
   styleUrls: ['./book-form.component.css'],
-  standalone: true
-  
+  standalone: true,
+  imports: [FormsModule]
 })
 export class BookFormComponent {
   book = {
@@ -20,9 +21,9 @@ export class BookFormComponent {
   constructor(private readonly bookService: BookService) { }
 
   onSubmit() {
-    this.bookService.createBook(this.book).then((response: { data: any; }) => {
+    this.bookService.createBook(this.book).then(response => {
       console.log(response.data);
-    }).catch((error: any) => {
+    }).catch(error => {
       console.error('There was an error creating the book!', error);
     });
   }

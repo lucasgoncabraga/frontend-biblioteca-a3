@@ -1,0 +1,10 @@
+<h2>Buscar Livro</h2>
+<div>
+  <label>Título do Livro:</label>
+  <input type="text" [(ngModel)]="searchTitle" name="title">
+  <button (click)="handleSearch()">Buscar</button>
+</div>
+<div *ngIf="searchResult">
+  <h3>Resultado da Busca:</h3>
+  <p>{{ searchResult.title }} por {{ searchResult.author }}</p>
+</div>
