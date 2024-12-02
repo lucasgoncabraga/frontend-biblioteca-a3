@@ -10,7 +10,14 @@
 
   <h2>Descrição</h2>
   <p>
-    Este projeto implementa uma aplicação de biblioteca online, permitindo que os usuários cadastrem livros, visualizem e busquem livros, além de gerenciar reservas e usuários.
+    Integrantes: 
+Lucas Gonçalves Braga - 12522131893
+Evelyn Muniz - 12522159149
+Vinicius Sciani - 1252214265
+André de Carvalho - 12522197172
+  
+  Este projeto implementa uma aplicação de biblioteca online, permitindo que os usuários cadastrem livros, visualizem e busquem livros, além de gerenciar reservas e usuários.
+    
   </p>
 
   <h2>Requisitos para Rodar o Projeto</h2>
